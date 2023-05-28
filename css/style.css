@@ -1,0 +1,50 @@
+.goodFont {
+    font-family: 'Great Vibes', cursive;
+    color: #C8A97E;
+    font-size: 10rem;
+
+}
+
+nav a{
+    position: relative;
+}
+nav a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background: #C8A97E ;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+nav a:hover::after{
+    transform: scaleX(1);
+  transform-origin: left;
+}
+
+@media only screen and (max-width:700px){
+.hero{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    max-height: 2000vh;
+}
+
+.goodFont{
+    font-size: 2rem;
+}
+.hero2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    max-height: 2000vh;
+    
+}
+
+}
+
